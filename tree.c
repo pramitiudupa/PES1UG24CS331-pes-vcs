@@ -294,3 +294,4 @@ int tree_from_index(ObjectID *id_out)
         return -1;
     return build_tree_recursive(&index, "", id_out);
 }
+// updated formatting
