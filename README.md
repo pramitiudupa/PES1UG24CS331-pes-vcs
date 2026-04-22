@@ -375,12 +375,12 @@ The test program verifies:
 - Integrity checking (detects corrupted objects)
 
 **📸 Screenshot 1A:** Output of `./test_objects` showing all tests passing.
-<img width="982" height="171" alt="image" src="https://github.com/user-attachments/assets/bbe76f14-6eb9-4231-abdd-e444f123dfd5" />
+<img width="1647" height="291" alt="Screenshot 2026-04-22 180258" src="https://github.com/user-attachments/assets/6a02b638-13a5-44fe-862c-c89f7ccc586b" />
+
 
 **📸 Screenshot 1B:** `find .pes/objects -type f` showing the sharded directory structure.
-<img width="987" height="113" alt="image" src="https://github.com/user-attachments/assets/b167cd59-fb41-44bb-94f2-5645cd418cb6" />
+<img width="1633" height="176" alt="Screenshot 2026-04-22 180624" src="https://github.com/user-attachments/assets/6d93bbbe-f016-4727-9f60-928fd25c3800" />
 
----
 
 ## Phase 2: Tree Objects
 
@@ -409,10 +409,12 @@ The test program verifies:
 - Deterministic serialization (same entries in any order → identical output)
 
 **📸 Screenshot 2A:** Output of `./test_tree` showing all tests passing.
-<img width="873" height="147" alt="image" src="https://github.com/user-attachments/assets/04e2b087-4fa3-404f-b327-a9dc28506c3a" />
+<img width="1628" height="262" alt="Screenshot 2026-04-22 183849" src="https://github.com/user-attachments/assets/d8436458-ec01-438f-b7a3-89eef1281c26" />
+
 
 **📸 Screenshot 2B:** Pick a tree object from `find .pes/objects -type f` and run `xxd .pes/objects/XX/YYY... | head -20` to show the raw binary format.
-<img width="972" height="75" alt="image" src="https://github.com/user-attachments/assets/5899a3bc-1cac-4c8c-9fd7-e521ae19946e" />
+<img width="1633" height="133" alt="Screenshot 2026-04-22 184135" src="https://github.com/user-attachments/assets/f0266ea7-fc87-424a-b9a2-5f949e456c05" />
+
 
 ---
 
@@ -469,10 +471,12 @@ cat .pes/index    # Human-readable text format
 ```
 
 **📸 Screenshot 3A:** Run `./pes init`, `./pes add file1.txt file2.txt`, `./pes status` — show the output.
-<img width="866" height="678" alt="image" src="https://github.com/user-attachments/assets/3ba83aae-6f6b-4f59-a603-6c3f7f593bce" />
+<img width="783" height="619" alt="Screenshot 2026-04-22 185842" src="https://github.com/user-attachments/assets/e8a9d72b-6f90-4f2a-80c5-5cd9081115e9" />
+
 
 **📸 Screenshot 3B:** `cat .pes/index` showing the text-format index with your entries.
-<img width="940" height="78" alt="image" src="https://github.com/user-attachments/assets/f8a49cbb-c9bd-40e1-b8f4-a3cbeafe35a2" />
+<img width="1636" height="149" alt="Screenshot 2026-04-22 185049" src="https://github.com/user-attachments/assets/3dec366c-3e03-442c-bb2c-d35dc4317aab" />
+
 
 ---
 
@@ -522,13 +526,16 @@ make test-integration
 ```
 
 **📸 Screenshot 4A:** Output of `./pes log` showing three commits with hashes, authors, timestamps, and messages.
-<img width="729" height="92" alt="image" src="https://github.com/user-attachments/assets/6cb10210-9f0c-429b-905c-0fcbc8193466" />
+<img width="1633" height="208" alt="Screenshot 2026-04-22 185230" src="https://github.com/user-attachments/assets/1701038c-a2a4-4eec-83f4-3ae9ad94f43a" />
+
 
 **📸 Screenshot 4B:** `find .pes -type f | sort` showing object store growth after three commits.
-<img width="876" height="184" alt="image" src="https://github.com/user-attachments/assets/b508d988-1a70-48f6-b4bd-99fdfc40931c" />
+<img width="1447" height="327" alt="Screenshot 2026-04-22 185407" src="https://github.com/user-attachments/assets/8f673a13-ff64-4fa3-8470-e1ce561fb376" />
+
 
 **📸 Screenshot 4C:** `cat .pes/refs/heads/main` and `cat .pes/HEAD` showing the reference chain.
-<img width="841" height="417" alt="image" src="https://github.com/user-attachments/assets/bab0dfa9-690b-4067-b1cc-a9a0381fa96a" />
+<img width="1238" height="614" alt="Screenshot 2026-04-22 185619" src="https://github.com/user-attachments/assets/da586b26-2d23-439f-951b-c9cc9c6844fa" />
+
 
 ---
 
