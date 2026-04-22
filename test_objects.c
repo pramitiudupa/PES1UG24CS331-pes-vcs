@@ -95,3 +95,4 @@ int main(void) {
     printf("\nAll Phase 1 tests passed.\n");
     return 0;
 }
+// updated formatting
